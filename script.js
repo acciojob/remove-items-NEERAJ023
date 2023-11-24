@@ -1,8 +1,9 @@
 //your JS code here. If required.
-let select=document.querySelector("#colorSelect");
+
 function clr(){
-	let val=select.val;
-	if(val!==-1){
-		select.remove(val);
+	let select=document.querySelector("#colorSelect");
+	let va=select.selectedIndex;
+	if(va!==-1){
+		select.remove(va);
 	}
 }
